@@ -7,8 +7,11 @@ An introductory course on data structures and algorithms
 ## topics
 
 series
+
 complexity
+
 sorting
+
 linkedlists
 
 # 2p - 2nd part
@@ -16,6 +19,9 @@ linkedlists
 ## topics
 
 stack
+
 queue
+
 trees
+
 graphs
