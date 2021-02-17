@@ -2,9 +2,9 @@
 
 An introductory course on data structures and algorithms
 
-# 1p - 1st part
+# 1st part
 
-## topics
+## Topics
 
 series
 
@@ -14,9 +14,9 @@ sorting
 
 linkedlists
 
-# 2p - 2nd part
+# 2nd part
 
-## topics
+## Topics
 
 stack
 
