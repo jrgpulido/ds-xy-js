@@ -1,6 +1,6 @@
 # ds-xy-js
 
-An introductory course on data structures and algorithms
+An first course on data structures and algorithms in javascript, ecmascript 6+, for fresh students
 
 # 1st part
 
