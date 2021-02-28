@@ -5,11 +5,11 @@
 //
 // COMPLEXITY
 
-//1. greatest common divisor
-//   gcd(a,b)
+//1. Least common multiple
+//   lcm(a,b)
 // -> a integer
 // -> b integer
-// <- gcd 
+// <- lcm 
 
 //2. sieve of Eratosthenes
 //   sieve(n)
