@@ -5,7 +5,7 @@
 //
 // SERIES
 
-//0. Sample - this is not a problem
+//0. Sample - problem statmenet, this is actually not a problem but an example
 //   sample(n)
 // -> input
 // <- output
