@@ -10,4 +10,5 @@ obj["lastName"] = "Pulido"
 //get
 obj[0]//undefined
 obj["firstName"]
-obj.firstName
+//vs
+//obj.firstName
