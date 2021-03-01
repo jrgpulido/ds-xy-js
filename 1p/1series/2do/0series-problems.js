@@ -3,7 +3,7 @@
 // create one file by program
 // implement a method, function, non-function solution
 // solve each as requested
-// make sure they run on a browser and print the result
+// make sure they run on a browser printing the result
 //
 // SERIES
 
