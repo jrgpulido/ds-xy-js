@@ -1,12 +1,16 @@
+// INSTRUCTIONS
 //
 // create one file by program
 // implement a method, function, non-function solution
 // solve each as requested
+// make sure they run on a browser and print the result
 //
 // SERIES
 
-//0. Sample - problem statmenet, this is actually not a problem but an example
-//   sample(n) //call
+//0. Sample - problem statment, this is actually not a exercise, but an example
+//
+//   sample(n) //routine calling
+//
 // -> input, preconditions, arguments
 // <- output, postconditions, result
 
@@ -15,7 +19,7 @@
 // -> n integer
 // <- the n first fibonacci elements
 
-//2. Power of 2 
+//2. Powers of 2 
 //   power2(n)
 // -> n integer
 // <- the n first elements of 2^n
@@ -25,7 +29,7 @@
 // -> n integer
 // <- the n first factorial elements
 
-//2. Power of 10
+//2. Powers of 10
 //   power10(n)
 // -> n integer
 // <- the n first elements of 10^n
