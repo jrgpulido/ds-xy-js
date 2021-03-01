@@ -4,7 +4,7 @@
 // solve each as requested
 // may use code from previous exercises
 //
-// DS
+// DS in JS
 
 //1. object
 //   attach(n)

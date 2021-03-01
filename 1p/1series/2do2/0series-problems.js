@@ -6,9 +6,9 @@
 // SERIES
 
 //0. Sample - problem statmenet, this is actually not a problem but an example
-//   sample(n)
-// -> input
-// <- output
+//   sample(n) //call
+// -> input, preconditions, arguments
+// <- output, postconditions, result
 
 //1. Fibonacci
 //   fibonacci(n)

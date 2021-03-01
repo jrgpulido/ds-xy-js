@@ -1,3 +1,7 @@
+// for the array to be sorted:
+// how many inversion are needed
+// which ones
+
 let inversions= A => {
     nInv = 0
 
@@ -11,8 +15,3 @@ let inversions= A => {
 
 let a=[1,3,5,2,4,6]
 console.log(inversions(a))
-
-
-// for the array to be sorted:
-// how many inversion are needed
-// which ones
