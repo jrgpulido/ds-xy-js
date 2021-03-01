@@ -10,8 +10,6 @@ series
 
 complexity
 
-ds
-
 sorting
 
 linkedlists
