@@ -12,6 +12,8 @@ complexity
 
 sorting
 
+searching
+
 linkedlists
 
 # 2nd part
