@@ -7,7 +7,7 @@
 //
 // SERIES
 
-//0. Sample - problem statment, this is actually not a exercise, but an example
+//0. Sample - problem statment, NOTE this is actually NOT a exercise, but an EXAMPLE
 //
 //   sample(n) //routine calling
 //

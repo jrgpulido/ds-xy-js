@@ -8,20 +8,20 @@
 
 //1. object
 //   attach(n)
-// -> a integer
-// <- the random names added
+// -> n random integer
+// <- random name added
 
 //2. set
 //   attach(n)
-// -> a integer
-// <- the random names added
+// -> n random integer
+// <- random name added
 
 //3. map
 //   attach(n)
-// -> a integer
-// <- the random names added
+// -> n random integer
+// <- random name added
 
 //4. array
 //   attach(n)
-// -> a integer
-// <- the random names added
+// -> n random integer
+// <- random name added
