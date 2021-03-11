@@ -12,12 +12,12 @@
 // <- random name added
 
 //2. set
-//   attach(n)
+//   attach(n)//wrap the method 'add'
 // -> n random integer
 // <- random name added
 
 //3. map
-//   attach(n)
+//   attach(n)//wrap the method 'set'
 // -> n random integer
 // <- random name added
 

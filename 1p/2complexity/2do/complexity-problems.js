@@ -19,9 +19,10 @@
 //3. random number
 //   random(n)
 // -> n integer
-// <- one random number in [0-n]
+// <- one random number in [1-n]
 
 //4. random name
 //   randomName()
 // -> 
 // <- one random name
+// ie nameXYZ
