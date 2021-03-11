@@ -14,12 +14,12 @@
 //2. set
 //   attach(n)//wrap the method 'add'
 // -> n random integer
-// <- random name added
+// <- 
 
 //3. map
 //   attach(n)//wrap the method 'set'
 // -> n random integer
-// <- random name added
+// <- 
 
 //4. array
 //   attach(n)
