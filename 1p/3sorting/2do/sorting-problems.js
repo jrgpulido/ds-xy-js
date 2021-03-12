@@ -10,13 +10,13 @@
 //1. bubble - your implementation 
 //   sort(d)
 // -> d an array of random numbers
-// <- the random names sorted
+// <- the random numbers sorted
 // verify is sorted
 
 //2. sort - use JS Array.sort implementation
 //   sort(d)
 // -> d an array of random numbers
-// <- the random names sorted
+// <- the random numbers sorted
 // verify is sorted
 
 //3. bubble - your implementation 
