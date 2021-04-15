@@ -8,23 +8,23 @@
 
 //1. object
 //   attach(n)
-// -> n random integer
+// -> n random name
 // <- random name added
 
 //2. set
 //   attach(n)//wrap the method 'add'
-// -> n random integer
-// <- 
+// -> n random name
+// <- random name added
 // alone or proto
 
 //3. map
 //   attach(n)//wrap the method 'set'
-// -> n random integer
-// <- 
+// -> n random name
+// <- random name added
 // alone or proto
 
 //4. array
 //   attach(n)
-// -> n random integer
+// -> n random name
 // <- random name added
 // alone or proto
