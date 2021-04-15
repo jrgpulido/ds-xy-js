@@ -15,13 +15,16 @@
 //   attach(n)//wrap the method 'add'
 // -> n random integer
 // <- 
+// alone or proto
 
 //3. map
 //   attach(n)//wrap the method 'set'
 // -> n random integer
 // <- 
+// alone or proto
 
 //4. array
 //   attach(n)
 // -> n random integer
 // <- random name added
+// alone or proto
