@@ -24,7 +24,7 @@
 // alone or proto
 
 //4. array
-//   attach(n)
+//   attach(n)//wrap the method 'push'
 // -> n random name
 // <- random name added
 // alone or proto
