@@ -1,3 +1,3 @@
 //your code here
 
-console.log('Hello DS world in ES6+\n')
+console.log('Hello queue DS world in ES6+\n')
