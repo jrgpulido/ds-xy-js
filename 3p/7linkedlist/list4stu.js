@@ -18,7 +18,7 @@ n2.next=n3
 console.log('n2.next',n2.next)
 
 //finally
-const traverse=(n)=>{
+const traverse=(n)=>{//es6
     let c=n//iterator 
     while(c){//exists
         console.log(c.data)
