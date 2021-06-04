@@ -6,6 +6,7 @@
 
 let obj = {}
 
+//es6
 const add    = (key, value) => obj[key] = value
 const get    = (key)  => obj[key]
 const remove = (key)  => delete obj[key]
