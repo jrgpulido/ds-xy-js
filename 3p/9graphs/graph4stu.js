@@ -1,6 +1,6 @@
 //
 // aGraph
-// pp172 A Common-Sense Guide to DS usesJS etAl (book)
+// pp172 A Common-Sense Guide to DS usesJS etAl
 //
 
 //ds

@@ -14,15 +14,19 @@ sorting
 
 searching
 
-linkedlists
-
 # 2nd part
 
 ## Topics
 
+linkedlists
+
 stack
 
 queue
+
+# 3nd part
+
+## Topics
 
 trees
 
