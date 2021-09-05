@@ -6,7 +6,7 @@ An first course on data structures and algorithms for fresh students in javascri
 
 ## Topics
 
-series
+### Series
 
 complexity
 
