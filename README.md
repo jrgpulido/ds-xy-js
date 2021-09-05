@@ -8,6 +8,20 @@ An first course on data structures and algorithms for fresh students in javascri
 
 ### Series
 
+```js
+cd dillinger
+npm i
+node app
+```
+
+
+```sh
+cd dillinger
+npm i
+node app
+```
+
+
 complexity
 
 sorting
