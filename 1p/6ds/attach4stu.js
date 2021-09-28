@@ -1,5 +1,5 @@
 //
-// attach
+// attach - as a push wrapper
 //
 
 let a = [3,2,1]
