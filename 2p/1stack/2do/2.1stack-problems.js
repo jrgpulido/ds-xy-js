@@ -6,6 +6,6 @@
  * may use code from previous exercises
  * 
  * PROBLEM 1
- * Stack implementation
+ * Stack implementation (array-based)
  *
  */

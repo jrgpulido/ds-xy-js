@@ -6,6 +6,6 @@
  * may use code from previous exercises
  *
  * PROBLEM 1
- * Queue implementation
+ * Queue implementation (array-based)
  *
  */

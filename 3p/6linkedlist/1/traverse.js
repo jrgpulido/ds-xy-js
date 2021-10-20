@@ -1,3 +1,7 @@
+//
+//finally
+//
+
 const traverse=(n)=>{//es6
     let c=n//iterator 
     while(c){//exists
@@ -5,3 +9,5 @@ const traverse=(n)=>{//es6
 	c=c.next
     }
 }
+
+traverse(n1)
