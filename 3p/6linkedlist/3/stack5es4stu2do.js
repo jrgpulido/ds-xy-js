@@ -6,9 +6,12 @@
 
 function Stack(n) {
     //props
-    this.linked = new Linked()    
+    this.linked = new Linked()   
 
     //methods
+    this.push = push
+    this.pop = pop
+    this.peek = peek
 }
 
 //implement
