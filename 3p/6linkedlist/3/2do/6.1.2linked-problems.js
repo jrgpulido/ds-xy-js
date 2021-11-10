@@ -5,6 +5,8 @@
  * solve each as requested
  * may use code from previous exercises
  * 
- * linked-list implementation exercise
- * edmodo
+ * PROBLEM 1
+ * linked-list (stack/queue) implementation exercise
+ * 
+ * zeeAlso edmodo
  */
