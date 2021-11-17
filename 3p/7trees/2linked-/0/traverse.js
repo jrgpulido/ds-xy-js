@@ -3,15 +3,15 @@
 // Tree
 //
 
- function preorder(n){
+ function traverse(n){
    if (n!==null){//else //base case
        console.log(n.d)//traverse, analize, explore, TASK (console)
-       preorder(n.l)
-       preorder(n.r)
+       traverse(n.l)
+       traverse(n.r)
    }//else
  }
 
 
 
-preorder(root)
+traverse(root)
 console.log()
