@@ -1,5 +1,5 @@
 //
-//
+// as Object
 //
 
 let friends = {
