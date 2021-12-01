@@ -19,7 +19,9 @@ addEdge = function(origVertex, destVertex, weight){
     if (weight == undefined){
 	weight = 0
     }
-    this.edges[origVertex][destVertex] = weight;
+    this.edges[origVertex][destVertex] = weight
+    //add here
+    //4undirected graphs
 }
 
 print = function(){
