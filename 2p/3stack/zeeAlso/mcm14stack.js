@@ -1,5 +1,5 @@
 //
-//ES5
+// ES5
 //
 
 function Stack() {

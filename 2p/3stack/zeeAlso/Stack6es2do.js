@@ -10,11 +10,11 @@ class Stack {
     //pushes the item on stack
     push(o){}//add, put, insert, enter, append, set, store 'o'
 
-    //returns the last item pushed and removes it from stack
-    pop(){}//get, delete, remove, leave, access
-
     //returns the top item without popping it from stack
     peek(){}//top: <- 'o', not remove
+
+    //returns the last item pushed and removes it from stack
+    pop(){}//get, delete, remove, leave, access
 
     //returns True if stack has no pushed items
     isEmpty(){}//<-boolean
@@ -23,8 +23,8 @@ class Stack {
     
     search(k){}//looks4 'k',<- 'o'
     size(){}//length, count
-    traverse(){}//visit, list
+    traverse(){}//visit, list, print
     
-    toString(){}//print
+    toString(){}
     makeEmpty(){}//clear
 }
