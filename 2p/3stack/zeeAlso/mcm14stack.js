@@ -1,5 +1,6 @@
 //
 // ES5
+// from the book mcm14
 //
 
 function Stack() {

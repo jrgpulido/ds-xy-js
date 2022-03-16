@@ -1,11 +1,14 @@
 //
-// ES6
-// todo
+// ES6 stack class design
 //
+// zeeAlso
+// stack6es4stu
+// mcm14stack
+// 
 
 class Stack {
-    constructor(){//creates stack
-    }
+    //creates stack
+    constructor(){}
 
     //pushes the item on stack
     push(o){}//add, put, insert, enter, append, set, store 'o'

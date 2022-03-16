@@ -1,6 +1,6 @@
 //
 // ES6
-// todo
+// to complete
 //
 
 class Stack {

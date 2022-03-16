@@ -1,4 +1,8 @@
-//your code here
+//
+// loose code
+// vs
+// asClass code
+// 
 
 console.log('Hello stack DS world in ES6+\n')
 
