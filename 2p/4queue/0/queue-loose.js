@@ -4,9 +4,12 @@
 // asClass code
 // 
 
-console.log('Hello queue DS world in ES6+\n')
+let Q=new Array()
 
+Q.unshift('A')//enqueue
+Q.unshift('B')
+Q.unshift('C')
 
-//
-// 2do
-//
+console.log(Q.pop())//dequeue
+console.log(Q.pop())
+console.log(Q.pop())
