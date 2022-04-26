@@ -3,11 +3,11 @@
 //
 
 let list = {
-  key: 1,
+  key: 'a',
   next: {
-    key: 2,
+    key: 'b',
     next: {
-      key: 3,
+      key: 'c',
       next: null
     }
   }
