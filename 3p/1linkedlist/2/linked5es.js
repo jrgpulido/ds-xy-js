@@ -3,9 +3,9 @@
 // Node5es (data)
 //
 
-function Linked(n) {
-    this.head = n
-    this.tail = n
+function Linked(n) {//node
+    this.head = n//node
+    this.tail = n//node
     this.size = 1
 
     this.getHead = getHead
@@ -33,7 +33,7 @@ function append(n){
 function traverse(){
     let c=this.head
     while(c){
-	//	    console.log(c.key)
+	//console.log(c.key)
 	console.log(c.data)
 	c=c.next
     }
