@@ -17,13 +17,13 @@ function Linked(n) {//node
 
 function getHead(){return this.head}
 
-function prepend(n){
+function prepend(n){//new node
     n.next = this.head
     this.head=n
     this.size++
 }
 
-function append(n){
+function append(n){//new node
     n.next = null
     this.tail.next=n
     this.tail=n
@@ -32,7 +32,7 @@ function append(n){
 
 function traverse(){
     let c=this.head
-    while(c){
+    while(c){//exists
 	//console.log(c.key)
 	console.log(c.data)
 	c=c.next
