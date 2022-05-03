@@ -1,7 +1,11 @@
+/*
+binary tree
+*/
+
 let root={
   d:'+',
-  l:null,
-  r:null
+  l:null,//eft
+  r:null//ight
  }
 
  let n1={

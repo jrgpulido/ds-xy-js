@@ -17,4 +17,4 @@ let o2 = new Node(-1)
 p.l = o1
 p.r = o2
 
-preoder(p)
+preorder(p)
