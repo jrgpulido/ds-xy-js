@@ -10,7 +10,7 @@
  *
  * look up for value v in the linked list
  * @arg {type} v - value; may be of a char, number, u object
- * @returns {bool} - true of false, if value v exist or not
+ * @returns {bool} - true or false, if value v exist or not
  * may use traverse
  *
  * @example
