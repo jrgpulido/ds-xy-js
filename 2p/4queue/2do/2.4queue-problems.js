@@ -6,8 +6,13 @@
  * may use code from previous exercises
  *
  * PROBLEM 1
- * half-problem
- * a array-based queue implementation
- * add empty,full methods to enqueue, dequeue methods
+ * Queue implementation (array-based)
+ *
+ * add
+ *    top
+ * 
+ * methods
+ *    isFull()
+ *    isEmpty()
  *
  */
