@@ -6,7 +6,7 @@
 class Stack {
     constructor(){
         this.data = []
-        this.top = 5
+        this.top = 5//stack size
     }
 
     push(o){//validate stack not full
@@ -58,6 +58,7 @@ class Stack {
 
 let s = new Stack()
 s.push(4)
+//s.search(4)
 s.push(0)
 s.push(3)
 s.push(2)

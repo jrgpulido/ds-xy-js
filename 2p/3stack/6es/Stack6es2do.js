@@ -8,7 +8,7 @@
 
 class Stack {
     //creates stack
-    constructor(){}
+    //constructor(){}
 
     //pushes the item on stack
     push(o){}//add, put, insert, enter, append, set, store 'o'
