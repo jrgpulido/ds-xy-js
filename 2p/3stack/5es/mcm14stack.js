@@ -34,9 +34,9 @@ function length() {
 }
 
 let s = new Stack()
-s.push("David")
-s.push("Raymond")
-s.push("Bryan")
+s.push("David")//0
+s.push("Raymond")//1
+s.push("Bryan")//2
 console.log("length: " + s.length())
 console.log(s.peek())
 
