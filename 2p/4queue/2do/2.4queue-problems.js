@@ -9,6 +9,7 @@
  * Queue implementation (array-based)
  *
  * add
+ * property
  *    top=5
  * 
  * methods
