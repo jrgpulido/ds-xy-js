@@ -1,6 +1,6 @@
 //
-// ES5
-// to complete
+// create library
+// 
 //
 
 function Queue() {
@@ -13,9 +13,6 @@ function Queue() {
     this.empty = empty
 }
 
-function enqueue(element) {
-    this.dataStore.push(element)
-}
 
 function dequeue() {
     return this.dataStore.shift()
@@ -65,3 +62,4 @@ console.log("Back of queue: " + q.back());
 
 q.dequeue()
 console.log(q.toString())
+console.log('done')
