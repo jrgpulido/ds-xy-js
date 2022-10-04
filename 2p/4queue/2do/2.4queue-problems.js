@@ -9,7 +9,7 @@
  * Queue implementation (array-based)
  *
  * add
- *    top
+ *    top=5
  * 
  * methods
  *    isFull()
