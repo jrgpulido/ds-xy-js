@@ -1,4 +1,4 @@
-entrypoint = ".gitignore"
+entrypoint = "index.js"
 
 hidden = [".config"]
 

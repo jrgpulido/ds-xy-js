@@ -8,8 +8,10 @@
  * PROBLEM 1
  * Queue implementation (array-based)
  *
- * add
- *    top
+ * add 
+ *
+ * property
+ *    top=5
  * 
  * methods
  *    isFull()
