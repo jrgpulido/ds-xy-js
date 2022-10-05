@@ -1,6 +1,5 @@
 //
 // create library
-// 
 //
 
 function Queue() {
