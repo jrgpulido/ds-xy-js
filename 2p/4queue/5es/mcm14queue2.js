@@ -13,6 +13,10 @@ function Queue() {
 }
 
 
+    function enqueue(element) {
+	this.dataStore.push(element)
+    }
+
 function dequeue() {
     return this.dataStore.shift()
 }
