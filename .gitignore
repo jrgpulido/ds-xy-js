@@ -4,7 +4,5 @@
 .DS_Store
 .Spotlight-V100
 .Trashes
-replit.nix
-.replit
 /**/node/
 /**/node_modules/
