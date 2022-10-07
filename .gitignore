@@ -1,3 +1,10 @@
+.idea/
+.vscode/
+._*
 .DS_Store
-.idea
+.Spotlight-V100
+.Trashes
+replit.nix
+.replit
+/**/node/
 /**/node_modules/
