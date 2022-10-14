@@ -9,12 +9,22 @@
  * contains(v)
  *
  * look up for value v in the linked list
- * @arg {type} v - value; may be of a char, number, u object
- * @returns {bool} - true or false, if value v exist or not
+ * @arg {type} v - value; may be of a char, number, or object
+ * @returns {bool} - true or false, if value v exists or not,
  * may use traverse
  *
  * @example
  * contains(3)
+ *
+ * PROBLEM 2
+ * getTail()
+ *
+ * retrieve the node at the tail
+ * @returns {Node} - Node at the tail or null if the list is empty
+ *
+ * @example
+ * getTail()
+ *
  *
  * @see {@link https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array}
  * @see {@link https://jsdoc.app}
