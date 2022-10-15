@@ -1,6 +1,6 @@
 //
 // imports ES5
-// linked5es2do
+// linked (linked5es.js)
 //
 
 //first

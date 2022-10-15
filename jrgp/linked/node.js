@@ -1,6 +1,6 @@
 export default
 //
-// 
+// ES6
 //
 class Node {
     constructor(d, n = null){
