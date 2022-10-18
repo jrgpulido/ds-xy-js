@@ -8,7 +8,7 @@
 let n1=new Node('a')
 let n2=new Node('b')
 
-let l=new Linked(n1)//new Node('a')
+let l = new Linked(n1)//new Node('a')
 l.traverse(l.getHead())
 
 l.prepend(n2)
