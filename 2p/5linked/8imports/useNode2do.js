@@ -18,4 +18,22 @@
 // insertBefore(newNode,'b')
 //
 
-console.log(1+2)
+class Node {
+  
+  constructor(d, n=null) {
+    this._data = d;
+    this._next = n;
+
+    
+  }
+  // Getter
+  get data() {
+    return this.data;
+  }}
+var a="as"
+let l = new Node
+(a).insertBefore(l)
+
+console.log(l.d)
+
+
