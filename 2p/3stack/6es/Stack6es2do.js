@@ -1,4 +1,4 @@
-  //
+//
 // ES6 stack class design
 //
 // zeeAlso
