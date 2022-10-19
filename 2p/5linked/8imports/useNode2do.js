@@ -18,4 +18,4 @@
 // insertBefore(newNode,'b')
 //
 
-
+console.log(1+2)
