@@ -1,0 +1,8 @@
+.idea/
+.vscode/
+._*
+.DS_Store
+.Spotlight-V100
+.Trashes
+/**/node/
+/**/node_modules/
