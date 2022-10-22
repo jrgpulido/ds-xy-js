@@ -1,8 +1,26 @@
-/** 
+/** INSTRUCTIONS
  *
- * your solution here
+ * create one file by program
+ * implement a method, function, non-function solution
+ * solve each as requested
+ * may use code from previous exercises
+ *
+ * PROBLEM 1
+ * Queue implementation (array-based)
+ *
+ * add
+ *    top
+ * 
+ * methods
+ *    isFull()
+ *    isEmpty()
  *
  */
+//
+// ES5
+// to complete
+//
+
 function Queue() {
   this.dataStore = []
   this.top = 5 // Add top ---------------------------- 1st
@@ -48,7 +66,7 @@ function toString() {
   return retStr
 }
 
-function isFull() {
+function isFull() { 
   if (this.dataStore.length === this.top) {
     return true //Si esta Lleno
   }
@@ -57,7 +75,7 @@ function isFull() {
   }
 } //---------------------------- METODO isFull()
 
-function isEmpty() {
+function isEmpty() { 
   if (this.dataStore.length === 0) {
     return true //Si esta Vacio
   }

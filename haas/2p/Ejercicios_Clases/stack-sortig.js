@@ -1,8 +1,3 @@
-/** 
- *
- * your solution here
- *
- */
 function Stack() {
   this.dataStore = []
   this.top = 0
@@ -12,11 +7,10 @@ function Stack() {
   this.length = length
   this.isEmpty = isEmpty
   this.sortStack = sortStack
-  this.size = size
+  this.size = 1
   this.clear = clear
   this.traverse = traverse
   this.toString = toString
-  this.search = search
 }
 //////////////////////////////////////////////////////////
 //Agrega un elemento a la pila
@@ -97,19 +91,6 @@ function clear() {
   this.top = 0
 }
 
-//funcion search burcar (n)
-function search(n) {
-  for (let i = 0; i < (stack.size()); i++) {
-    if ((this.dataStore) == n) {
-      console.log('El Numero', n, 'Esta en el: stack[' + i + ']')
-      return true
-    }
-  }
-  console.log('El Numero', n, '[No Encontrado]')
-  return false
-}
-
-//-----------------------------------------------------------------
 //funcion para generar una pila con numeros aleatorios entre 0 y n
 function genStack(n) {
   let stack = new Stack()
@@ -133,7 +114,3 @@ let sortedStack = sortStack(stack)
 //imprimir la pila ordenada
 console.log('Pila Ordenada')
 console.log(sortedStack.dataStore)
-
-//Search: Buscar el valor (n)
-console.log(stack.search(21))
-console.log('Size: ', stack.size())
