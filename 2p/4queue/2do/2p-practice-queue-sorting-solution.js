@@ -13,7 +13,7 @@ function Queue() { //Constructor
   this.length = length
   this.size = size
   this.clear = clear
-
+  this.sortQueue = sortQueue
   this.isFull = isFull //Devuelve true si la cola esta llena
   this.isEmpty = isEmpty //Devuelve true si la cola esta vacia
   this.toString = toString //Devuelve todos los elementos de la cola
@@ -81,33 +81,49 @@ function toString() {
   return retStr
 }
 
-//Ordena una cola usando una cola temporal
-function sortQueue(queue) {
-    let tempQueue = new Queue()
-    while (!queue.isEmpty()) {
+//---------------------------------------------------------------------*
 
-        // Saca el primer elemento
-        let tmp = queue.dequeue()
+function sortQueue() { //Ordena una cola usando una cola temporal y una pila temporal
+  let tempQueue = new Queue() //Cola temporal
+  let tempArray = [] //Array temporal
+  let step = 0 //Contador de pasos
 
-        // Mientras la cola temporal no esté vacía &&
-        // la parte superior de la cola es mayor que temp
-        while (!tempQueue.isEmpty() && tempQueue.back() > tmp) {
+  //Recorre la cola y agrega los elementos a un array
+  while (!this.isEmpty()) {
+    tempArray.push(this.dequeue()) //Se agrega el elemento a la cola temporal
+    step++
+  }
 
-        // Saca de la cola temporal y
-        // lo empuja a la cola principal
-        queue.enqueue(tempQueue.dequeue())
+  //Ordena el array
+  // tempArray.sort((a, b) => a - b) //Ordena el array de menor a mayor
+
+  //Ordena el array de menor a mayor
+  function sortArray(array) {
+    let temp = 0
+    for (let i = 0; i < array.length; i++) { step++
+      for (let j = 0; j < array.length; j++) { step++
+        if (array[i] < array[j]) { step++
+          temp = array[i]
+          array[i] = array[j]
+          array[j] = temp
         }
-
-        // Agrega temp a la cola temporal
-        tempQueue.enqueue(tmp)
+      }
     }
+    return array
+  }
+  //----------------------------------------------
+  tempArray = sortArray(tempArray)
 
-    // Copia la cola temporal a la cola principal
-    while (!tempQueue.isEmpty()) {
-        queue.enqueue(tempQueue.dequeue())
-    }
+  //Recorre el array y agrega los elementos a la cola
+  while (tempArray.length > 0) {
+    tempQueue.enqueue(tempArray.shift()) //Se agrega el elemento a la cola
+    step++
+  }
+  console.log("Steps: " + step)
+  return tempQueue
 }
 
+//Genera n numeros aleatorios entre 0 y max numeros de elementos
 function genNum(n, max) {
   for (let i = 0; i < n; ++i) {
     this.dataStore.push(Math.floor(Math.random() * max))
@@ -137,7 +153,13 @@ q.genNum(10, 100)
 // console.log("\nPrimera fila de la cola:", q.front());
 // console.log("Ultima fila de la cola:", q.back(), '\n');
 
-console.log(q.dataStore)
+// console.log('Cola sin Ordenar:',q.dataStore)
 
-sortQueue(q)
+console.time('sortQueue')
+q = q.sortQueue()
+console.log('The Queue is sorted now')
+console.timeEnd('sortQueue')
+
+
+console.log(q.dataStore)
 q.clear()

@@ -11,6 +11,7 @@ function Stack() {
   this.peek = peek
   this.length = length
   this.isEmpty = isEmpty
+  this.isFull = isFull
   this.sortStack = sortStack
   this.size = size
   this.clear = clear
@@ -24,17 +25,17 @@ function push(element) {
   this.dataStore[this.top++] = element
 }
 
-//Eliminar un elemento de la pila
+
 function pop() {
   return this.dataStore[--this.top]
 }
 
-//Devuelve el elemento superior de la pila
+
 function peek() {
   return this.dataStore[this.top - 1]
 }
 
-//Devuelve el numero de elementos en la pila
+
 function length() {
   return this.top
 }
@@ -44,26 +45,30 @@ function isEmpty() {
   return this.top === 0
 }
 
+function isFull() {
+  return this.top === this.dataStore.length
+}
+
 //Ordena una pila usando una pila temporal
 function sortStack(stack) {
   let tempStack = new Stack()
+  let steps = 0 //contador de pasos
   while (!stack.isEmpty()) {
-
-    // Saca el primer elemento
     let tmp = stack.pop()
 
-    // Mientras la pila temporal no esté vacía &&
-    // la parte superior de la pila es mayor que temp
+    //mientras que la pila temporal no este vacia y el elemento en el tope de
+    // la pila temporal sea mayor que el elemento temporal
     while (!tempStack.isEmpty() && tempStack.peek() > tmp) {
-
-      // Saca de la pila temporal y
-      // lo empuja a la pila principal
       stack.push(tempStack.pop())
+      steps++
     }
 
     // Empuja temp en la pila temporal
     tempStack.push(tmp)
+    steps++
   }
+
+  console.log('Steps: ', steps)
   return tempStack
 }
 
@@ -76,7 +81,6 @@ function traverse(stack) {
   }
 }
 
-//funcion tostring para imprimir la pila
 function toString(stack) {
   let top = stack.top - 1
   let str = ''
@@ -85,17 +89,17 @@ function toString(stack) {
     top--
   }
   return str
-}
+} //funcion toString para imprimir la pila
 
-//Devuelve el tamaño de la pila
 function size() {
   return this.dataStore.length
 }
 
-//Limpia la pila
 function clear() {
   this.top = 0
 }
+
+let stack;
 
 //funcion search burcar (n)
 function search(n) {
@@ -110,30 +114,33 @@ function search(n) {
 }
 
 //-----------------------------------------------------------------
-//funcion para generar una pila con numeros aleatorios entre 0 y n
-function genStack(n) {
-  let stack = new Stack()
-  for (let i = 0; i < n; i++) {
-    stack.push(Math.floor(Math.random() * n))
-  }
-  return stack;
+//funcion para generar una pila con n numeros aleatorios entre 0 y max numeros de elementos
+function genStack(n, max) {
+    let stack = new Stack()
+    for (let i = 0; i < n; i++) {
+        stack.push(Math.floor(Math.random() * max))
+    }
+    return stack
 }
 //////////////////////////////////////////////////////////
 
 // // crear una pila \\ \\
-var stack = genStack(10);
+stack = genStack(10, 100);
 
 //imprimir la pila
-console.log('Pila Principal:')
-console.log(stack.dataStore)
+// console.log('Pila Principal:')
+// console.log(stack.dataStore)
 
 //ordenando la pila
 stack = stack.sortStack(stack)
 
+console.time('sortStack')
 //imprimir la pila ordenada
-console.log('Pila Ordenada')
-console.log(stack.dataStore)
+console.log('The Stack is sorted:')
+console.timeEnd('sortStack')
+
+console.log('\n',stack.dataStore)
 
 //Search: Buscar el valor (n)
-console.log(stack.search(21))
-console.log('Size: ', stack.size())
+// console.log(stack.search(21))
+// console.log('Size: ', stack.size())
