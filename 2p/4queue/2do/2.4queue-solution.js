@@ -75,17 +75,20 @@ q.enqueue("Jennifer")
 q.enqueue("Hector")
 q.enqueue("Alvarez")
 //////////////////////////// ; isFull()
-q.enqueue("isFull") /////// ;
-q.enqueue("isFull") /////// ;
+q.enqueue("isFull12") /////// ;
+q.enqueue("isFull13") /////// ;
 //////////////////////////// ;
-console.log('\n')
 console.log(q.toString())
 
-console.log("Primera fila de la cola: " + q.front());
-console.log("Ultima fila de la cola " + q.back());
+console.log("Primera fila de la cola:", q.front());
+console.log("Ultima fila de la cola :", q.back());
 
+console.log()
 q.dequeue()
+console.log()
 
+// console.log(q.toString())
 
-console.log('\n')
-console.log(q.toString())
+console.log('isFull?',q.isFull())
+
+console.log('isEmpty?',q.isEmpty())
