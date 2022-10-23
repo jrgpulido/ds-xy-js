@@ -1,56 +1,47 @@
-/** 
+/**
  *
  * your solution here
  *
  */
-function Queue() {
+function Queue() { //Constructor
   this.dataStore = []
-  this.top = 10 // Add top ---------------------------- 1st
+  this.top = 10  //Tamaño de la cola
   this.enqueue = enqueue
   this.dequeue = dequeue
   this.front = front
   this.back = back
-  this.toString = toString
-  this.isFull = isFull
-  this.isEmpty = isEmpty
-  this.sortQueue = sortQueue
+  this.length = length
+  this.size = size
+  this.clear = clear
+
+  this.isFull = isFull //Devuelve true si la cola esta llena
+  this.isEmpty = isEmpty //Devuelve true si la cola esta vacia
+  this.toString = toString //Devuelve todos los elementos de la cola
+
+  //
+  this.sortQueue = sortQueue //Ordena una cola usando una cola temporal
+  this.genNum = genNum //Genera numeros aleatorios y los agrega a la cola
+  //
+
+  this.traverse = traverse //Recorre la cola y ejecuta una funcion
+  this.search = search //Busca un elemento en la cola
 }
-
-//------------------------------------------------------
-//funcion para ordenar una cola con una temporal
-function sortQueue(q) {
-  let temp = new Queue() //Cola temporal
-  while (!q.isEmpty()) { // Mientras la cola no este vacia
-    let item = q.dequeue() // Desprendo el primer elemento de la cola
-
-    while (!(temp.isEmpty()) && (temp.back()) > item) {
-      // Mientras la cola temporal no este vacia y el ultimo elemento 
-      // de la cola temporal sea mayor que el elemento desprendido
-
-      q.enqueue(temp.dequeue()) //Añado el elemento desprendido a la cola
-
-    } //Si no se cumple la condicion, se añade el elemento desprendido a la cola temporal
-    temp.enqueue(item)
-  }
-  return temp
-}
-
-/////////////////////////////////////////////////////////
 
 function enqueue(element) {
-  if (this.isFull())
-    console.log('\nLa cola esta llena')
+  if (this.isFull()) {
+    return "La cola esta llena"
+  }
   else {
-    console.log(element, 'asido añadido')
     this.dataStore.push(element)
   }
 }
 
 function dequeue() {
-  if (this.isEmpty())
-    console.log('\nLa cola esta Vacia')
+  if (this.isEmpty()) {
+    return "La cola esta vacia"
+  }
   else {
-    console.log(this.dataStore.shift(), 'asido desprendido')
+    return this.dataStore.shift()
   }
 }
 
@@ -62,12 +53,16 @@ function back() {
   return this.dataStore[this.dataStore.length - 1]
 }
 
-function toString() {
-  let retStr = "";
-  for (let i = 0; i < this.dataStore.length; ++i) {
-    retStr += this.dataStore[i] + "\n"
-  }
-  return retStr
+function length() {
+  return this.dataStore.length
+}
+
+function size() {
+  return this.top
+}
+
+function clear() {
+  this.dataStore = []
 }
 
 function isFull() {
@@ -77,7 +72,7 @@ function isFull() {
   else {
     return false //No esta Lleno
   }
-} //---------------------------- METODO isFull()
+}
 
 function isEmpty() {
   if (this.dataStore.length === 0) {
@@ -86,28 +81,57 @@ function isEmpty() {
   else {
     return false //No esta Vacio
   }
-} //---------------------------- METODO isEmpty()
-
-//funcion para generar n numeros aleatorios
-function randomNum(n) {
-  let q = new Queue()
-  for (let i = 0; i < n; i++) {
-    q.enqueue(Math.floor(Math.random() * 1e2))
-  }
-  return q;
 }
 
-let q = randomNum(5)
+function toString() {
+  let retStr = "";
+  for (let i = 0; i < this.dataStore.length; ++i) {
+    retStr += this.dataStore[i] + "\n"
+  }
+  return retStr
+}
 
-console.log("Primera fila de la cola: " + q.front());
-console.log("Ultima fila de la cola " + q.back());
+//
+function sortQueue(queue) {
+  let tempQueue = new Queue()
+  while (!queue.isEmpty()) {
+    let tmp = queue.dequeue()
+    while (!tempQueue.isEmpty() && tempQueue.front() > tmp) {
+      queue.enqueue(tempQueue.dequeue())
+    }
+    tempQueue.enqueue(tmp)
+  }
+  return tempQueue
+}
 
-console.log('\n', q.toString())
+function genNum(n, max) {
+  for (let i = 0; i < n; ++i) {
+    this.dataStore.push(Math.floor(Math.random() * max))
+  }
+}
+//
 
-// q.dequeue()
-// console.log('\n')
-// console.log(q.toString())
+function traverse(fn) {
+  for (let i = 0; i < this.dataStore.length; ++i) {
+    fn(this.dataStore[i])
+  }
+}
 
-// // imprimir la cola ordenada console cola ordenada
-// console.log('Cola Ordenada:')
-// console.log(sortQueue(q).toString())
+function search(element) {
+  for (let i = 0; i < this.dataStore.length; ++i) {
+    if (this.dataStore[i] === element) {
+      return i
+    }
+  }
+  return -1 //Si no se encuentra el elemento "Undefined"
+}
+
+
+let q = new Queue()
+q.genNum(10, 100)
+
+console.log("\nPrimera fila de la cola:", q.front());
+console.log("Ultima fila de la cola:", q.back(), '\n');
+
+console.log(q.toString())
+console.log(sortQueue(q).toString())   //Ordena la cola
