@@ -100,7 +100,7 @@ function clear() {
 //funcion search burcar (n)
 function search(n) {
   for (let i = 0; i < (stack.size()); i++) {
-    if ((this.dataStore) == n) {
+    if ((this.dataStore) === n) {
       console.log('El Numero', n, 'Esta en el: stack[' + i + ']')
       return true
     }
@@ -127,12 +127,12 @@ var stack = genStack(10);
 console.log('Pila Principal:')
 console.log(stack.dataStore)
 
-//ordenar la pila
-let sortedStack = sortStack(stack)
+//ordenando la pila
+stack = stack.sortStack(stack)
 
 //imprimir la pila ordenada
 console.log('Pila Ordenada')
-console.log(sortedStack.dataStore)
+console.log(stack.dataStore)
 
 //Search: Buscar el valor (n)
 console.log(stack.search(21))

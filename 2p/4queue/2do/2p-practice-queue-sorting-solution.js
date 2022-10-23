@@ -19,7 +19,7 @@ function Queue() { //Constructor
   this.toString = toString //Devuelve todos los elementos de la cola
 
   //
-  this.sortQueue = sortQueue //Ordena una cola usando una cola temporal
+  // this.sortQueue = sortQueue //Ordena una cola usando una cola temporal
   this.genNum = genNum //Genera numeros aleatorios y los agrega a la cola
   //
 
@@ -66,21 +66,11 @@ function clear() {
 }
 
 function isFull() {
-  if (this.dataStore.length === this.top) {
-    return true //Si esta Lleno
-  }
-  else {
-    return false //No esta Lleno
-  }
+  return this.dataStore.length === this.top;
 }
 
 function isEmpty() {
-  if (this.dataStore.length === 0) {
-    return true //Si esta Vacio
-  }
-  else {
-    return false //No esta Vacio
-  }
+  return this.dataStore.length === 0;
 }
 
 function toString() {
@@ -91,17 +81,31 @@ function toString() {
   return retStr
 }
 
-//
+//Ordena una cola usando una cola temporal
 function sortQueue(queue) {
-  let tempQueue = new Queue()
-  while (!queue.isEmpty()) {
-    let tmp = queue.dequeue()
-    while (!tempQueue.isEmpty() && tempQueue.front() > tmp) {
-      queue.enqueue(tempQueue.dequeue())
+    let tempQueue = new Queue()
+    while (!queue.isEmpty()) {
+
+        // Saca el primer elemento
+        let tmp = queue.dequeue()
+
+        // Mientras la cola temporal no esté vacía &&
+        // la parte superior de la cola es mayor que temp
+        while (!tempQueue.isEmpty() && tempQueue.back() > tmp) {
+
+        // Saca de la cola temporal y
+        // lo empuja a la cola principal
+        queue.enqueue(tempQueue.dequeue())
+        }
+
+        // Agrega temp a la cola temporal
+        tempQueue.enqueue(tmp)
     }
-    tempQueue.enqueue(tmp)
-  }
-  return tempQueue
+
+    // Copia la cola temporal a la cola principal
+    while (!tempQueue.isEmpty()) {
+        queue.enqueue(tempQueue.dequeue())
+    }
 }
 
 function genNum(n, max) {
@@ -130,8 +134,10 @@ function search(element) {
 let q = new Queue()
 q.genNum(10, 100)
 
-console.log("\nPrimera fila de la cola:", q.front());
-console.log("Ultima fila de la cola:", q.back(), '\n');
+// console.log("\nPrimera fila de la cola:", q.front());
+// console.log("Ultima fila de la cola:", q.back(), '\n');
 
-console.log(q.toString())
-console.log(sortQueue(q).toString())   //Ordena la cola
+console.log(q.dataStore)
+
+sortQueue(q)
+q.clear()
