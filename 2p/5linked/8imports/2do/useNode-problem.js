@@ -1,21 +1,21 @@
 // 1 insertAfter
-// insert newNode after node containing data 'b'
+// inserta newNode después del nodo que contiene los datos 'b'
 //
 // -> c char
-// -> newNode Node
-// <- True if inserted
-// <- False if not found
+// -> newNode Nodo
+// <- True si se inserta
+// <- Falso si no se encuentra
 //
 // insertAfter(newNode,'b')
 //
 
 // 2 insertBefore
-// insert newNode before node containing data 'b'
+// inserta el nuevoNodo antes del nodo que contiene los datos 'b'
 //
 // -> c char
-// -> newNode Node
-// <- True if inserted
-// <- False if not found
+// -> newNode Nodo
+// <- True si se inserta
+// <- Falso si no se encuentra
 //
 // insertBefore(newNode,'b')
 //

@@ -1,9 +1,9 @@
-/** the PROBLEM with arrays
+/** el PROBLEMA con las matrices
  *
- * for instance, create 100,000, then:
- * insert a new element at position 3
- * remove element at position 4
- * think about the number of operations that have to be carried out
+ * por ejemplo, crear 100.000, entonces:
+ * insertar un nuevo elemento en la posición 3
+ * eliminar un elemento en la posición 4
+ * piensa en el número de operaciones que hay que realizar
  *
- * this section has NOT exercises
+ * esta sección NO tiene ejercicios
  */

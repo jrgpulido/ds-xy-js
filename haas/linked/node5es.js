@@ -1,5 +1,5 @@
 export default
-// Exporta la funcion Node
+//
 // ES5
 //
 function node(n) { // Node
@@ -10,11 +10,11 @@ function node(n) { // Node
 
   //Methods
   this.getHead = getHead
+  this.getTail = getTail
   this.prepend = prepend
   this.append = append
   this.traverse = traverse
   this.contains = contains
-  this.getTail = getTail
   this.insertAfter = insertAfter
   this.insertBefore = insertBefore
 }
@@ -58,28 +58,36 @@ function contains(n) {
 
 function getTail() { return this.tail }
 
-function insertAfter(newNode, k) {//node, key
-  let c = this.head
-  while (c) {
-    if (c.key === k) {
-      newNode.next = c.next
-      c.next = newNode
-      this.size++
-      return
+function insertAfter(n, d) { // new node, data
+    let c = this.head
+    while (c) {//exists
+        if (c.data === d) {
+        n.next = c.next
+        c.next = n
+        this.size++
+        return true
+        }
+        c = c.next
     }
-    c = c.next
-  }
+    return false
 }
 
-function insertBefore(newNode, k) {//node, key
-  let c = this.head
-  while (c) {// Mientra existe (c)
-    if (c.next.key === k) {
-      newNode.next = c.next
-      c.next = newNode
-      this.size++
-      return
-    }
+function insertBefore(n, d) { // new node, data
+    let c = this.head
+    while (c) {//exists
+        if (c.data === d) {
+            n.next = c
+            this.head = n
+            this.size++
+            return true
+        }
     c = c.next
-  }
+    }
+    return false
 }
+
+let n = new node('b')
+n.insertBefore('c', 'b')
+// console.log(n) // Node { data: 'b', next: null }
+
+console.log(n)

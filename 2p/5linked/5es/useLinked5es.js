@@ -2,6 +2,7 @@
 // imports ES5
 // linked (linked5es.js)
 //
+import Node from './node5es.js'
 
 //first
 //let n1=new Node('a',new Node('f'))

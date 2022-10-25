@@ -4,42 +4,42 @@ export default
 //
 
 class Node {
-      constructor(d, n = null) {
-          this.size = 1
-          this._data = d
-          this._next = n
-      }
+    constructor(d, n = null) {
+        this.size = 1
+        this._data = d
+        this._next = n
+    }
 
-      get data() {
+    get data() {
           return this._data
       }
 
-      get next() {
+    get next() {
           return this._next
       }
 
-      set next(n) {
+    set next(n) {
           this._next = n
       }
 
-      append(n) {
+    append(n) {
           n.next = null
           this.tail.next = n
           this.tail = n
           this.size++
       }
 
-      prepend(n) {
+    prepend(n) {
           n.next = this.head
           this.head = n
           this.size++
       }
 
-      toString() {
+    toString() {
           return this._data
       }
 
-      contains(n) {
+    contains(n) {
           let c = this.head
           while (c) {
               if (c.key === n.key) return true
@@ -48,7 +48,7 @@ class Node {
           return false
       }
 
-      insertAfter(n, d) {
+    insertAfter(n, d) { //newNode, char
           let c = this.head
           while (c) {
               if (c.data === d) {
@@ -61,28 +61,28 @@ class Node {
           return false
       }
 
-      insertBefore(n, d) {
-          let c = this.head
-          while (c) {
-              if (c.data === d) {
-                  n.next = c
-                  this.head = n
-                  return true
-              }
-              c = c.next
-          }
-          return false
-      }
+    insertBefore(n, d) { //newNode, char
+        let c = this.head
+        while (c) {
+            if (c.data === d) {
+                n.next = c
+                this.head = n
+                return true
+            }
+            c = c.next
+        }
+        return false
+    }
 
-      getTail() {
+    getTail() {
           return this.tail
       }
 
-      getHead() {
+    getHead() {
           return this.head
       }
 
-      traverse() {
+    traverse() {
           let c = this.head
           while (c) {
               console.log(c.data)
@@ -90,4 +90,4 @@ class Node {
           }
           console.log('\n')
       }
-  }
+}
