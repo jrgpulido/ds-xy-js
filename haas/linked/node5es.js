@@ -2,11 +2,13 @@
 // imports ES5
 // Node (Node4stu5es.js)
 //
-export default function node(n) {//node
-  this.head = n//node
-  this.tail = n//node
+export default function node(n) { // Node
+  //Constructor
+  this.head = n
+  this.tail = n
   this.size = 1
 
+  //Methods
   this.getHead = getHead
   this.prepend = prepend
   this.append = append
@@ -45,14 +47,14 @@ function traverse() {
 // exercises
 //
 
-function contains(n) {//node
+function contains(n) {
   let c = this.head
   while (c) {//exists
     if (c.key === n.key) return true
     c = c.next
   }
   return false
-} // Recorre el nodo hasta (n)
+}
 
 function getTail() { return this.tail }
 
