@@ -1,8 +1,8 @@
+export default
+// Exporta la funcion Node
+// ES5
 //
-// imports ES5
-// Node (Node4stu5es.js)
-//
-export default function node(n) { // Node
+function node(n) { // Node
   //Constructor
   this.head = n
   this.tail = n

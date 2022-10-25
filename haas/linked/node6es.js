@@ -1,8 +1,9 @@
-  //
-  // ES6
-  //
+export default
+// Exporta la clase node
+// ES6
+//
 
-  export default class Node {
+class Node {
       constructor(d, n = null) {
           this.size = 1
           this._data = d

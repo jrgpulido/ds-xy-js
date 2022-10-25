@@ -2,7 +2,7 @@
 //finally
 //
 
-const traverse=(n)=>{//es6
+const traverse=(n)=>{ //es6|es5
     let c=n//iterator 
     while(c){//exists
       console.log(c.data)
@@ -10,4 +10,7 @@ const traverse=(n)=>{//es6
     }
 }
 
-traverse(n1)
+// traverse(n1)
+
+// Activar el traverse en Node4stu5es.js //Inavilitado
+// export default traverse
