@@ -4,20 +4,20 @@
  *
  */
 function Stack() {
-  this.dataStore = []
-  this.top = 0
-  this.push = push
-  this.pop = pop
-  this.peek = peek
-  this.length = length
-  this.isEmpty = isEmpty
-  this.isFull = isFull
-  this.sortStack = sortStack
-  this.size = size
-  this.clear = clear
-  this.traverse = traverse
-  this.toString = toString
-  this.search = search
+  this.dataStore = [] //inicializa un array para almacenar la pila
+  this.top = 0 //inicializa el tope de la pila
+  this.push = push //agrega un elemento a la pila
+  this.pop = pop //elimina un elemento de la pila
+  this.peek = peek //lee el elemento en el tope de la pila
+  this.length = length //devuelve la longitud de la pila
+  this.isEmpty = isEmpty //devuelve true si la pila esta vacia
+  this.isFull = isFull //devuelve true si la pila esta llena
+  this.sortStack = sortStack //ordena una pila usando una pila temporal
+  this.size = size //devuelve el tamaño de la pila
+  this.clear = clear //limpia la pila
+  this.traverse = traverse //recorre la pila
+  this.toString = toString //imprime la pila
+  this.search = search //busca un elemento en la pila
 }
 //////////////////////////////////////////////////////////
 //Agrega un elemento a la pila
@@ -99,8 +99,6 @@ function clear() {
   this.top = 0
 }
 
-let stack;
-
 //funcion search burcar (n)
 function search(n) {
   for (let i = 0; i < (stack.size()); i++) {
@@ -124,23 +122,30 @@ function genStack(n, max) {
 }
 //////////////////////////////////////////////////////////
 
-// // crear una pila \\ \\
-stack = genStack(10, 100);
+let stack = new Stack()
+
+for (let i = 0; i < 5; i++) {
+  // // crear una pila \\ \\
+  console.log('Corrienda#',i+1)
+  stack = genStack(10, 1e3);
 
 //imprimir la pila
 // console.log('Pila Principal:')
 // console.log(stack.dataStore)
 
 //ordenando la pila
-stack = stack.sortStack(stack)
+  stack = stack.sortStack(stack)
 
-console.time('sortStack')
+  console.time('sortStack')
 //imprimir la pila ordenada
-console.log('The Stack is sorted:')
-console.timeEnd('sortStack')
+  console.log('The Stack is sorted:')
+  console.timeEnd('sortStack')
 
-console.log('\n',stack.dataStore)
+  console.log()
 
 //Search: Buscar el valor (n)
 // console.log(stack.search(21))
 // console.log('Size: ', stack.size())
+}
+
+console.log('\n',stack.dataStore)

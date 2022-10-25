@@ -4,16 +4,16 @@
  *
  */
 function Queue() { //Constructor
-  this.dataStore = []
+  this.dataStore = [] //Inicializa el array
   this.top = 10  //Tamaño de la cola
-  this.enqueue = enqueue
-  this.dequeue = dequeue
-  this.front = front
-  this.back = back
-  this.length = length
-  this.size = size
-  this.clear = clear
-  this.sortQueue = sortQueue
+  this.enqueue = enqueue //Agrega un elemento a la cola
+  this.dequeue = dequeue //Elimina un elemento de la cola
+  this.front = front //Devuelve el primer elemento de la cola
+  this.back = back //Devuelve el ultimo elemento de la cola
+  this.length = length //Devuelve la longitud de la cola
+  this.size = size //Devuelve el tamaño de la cola
+  this.clear = clear //Limpia la cola
+  this.sortQueue = sortQueue //Ordena la cola
   this.isFull = isFull //Devuelve true si la cola esta llena
   this.isEmpty = isEmpty //Devuelve true si la cola esta vacia
   this.toString = toString //Devuelve todos los elementos de la cola
@@ -146,20 +146,27 @@ function search(element) {
   return -1 //Si no se encuentra el elemento "Undefined"
 }
 
-
 let q = new Queue()
-q.genNum(10, 100)
+//Test
+
+for (let i = 0; i < 5 ; i++) {
+  q.genNum(1e3, 1e3)
 
 // console.log("\nPrimera fila de la cola:", q.front());
 // console.log("Ultima fila de la cola:", q.back(), '\n');
 
 // console.log('Cola sin Ordenar:',q.dataStore)
 
-console.time('sortQueue')
-q = q.sortQueue()
-console.log('The Queue is sorted now')
-console.timeEnd('sortQueue')
+  console.log('Corrida #',i+1)
+  console.time('sortQueue')
+  q = q.sortQueue()
+  console.log('The Queue is sorted now')
+  console.timeEnd('sortQueue')
+  console.log()
+
+  q.clear()
+}
+
 
 
 console.log(q.dataStore)
-q.clear()
