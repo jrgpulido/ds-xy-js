@@ -2,8 +2,7 @@
 // imports ES5
 // Node (Node4stu5es.js)
 //
-
-function Linked(n) {//node
+export default function node(n) {//node
   this.head = n//node
   this.tail = n//node
   this.size = 1
@@ -26,11 +25,10 @@ function prepend(n) {//new node to -FRONT-->
   this.size++
 }
 
-function append(n) {//new node to --BACK->
-  n.next = null//
-  this.tail.next = n
-  this.tail = n
-  this.size++
+function append(n) {//new node to <--BACK-
+    this.tail.next = n
+    this.tail = n
+    this.size++
 }
 
 function traverse() {
@@ -60,7 +58,7 @@ function getTail() { return this.tail }
 
 function insertAfter(newNode, k) {//node, key
   let c = this.head
-  while (c) {// Mientra existe (c)
+  while (c) {
     if (c.key === k) {
       newNode.next = c.next
       c.next = newNode

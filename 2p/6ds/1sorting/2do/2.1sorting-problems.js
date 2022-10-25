@@ -26,4 +26,3 @@
 // - steps it tooks
 
 // create a 5-column table
-
