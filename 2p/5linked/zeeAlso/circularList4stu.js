@@ -4,12 +4,22 @@
 //
 
 class Circular {//  constructor(){}
-    previous(){}
-    next(){}
+    previous(){
+        return this;
+    }
+    next(){
+        return this;
+    }
 
-    retrieve(){}//search
-    insert(){}
-    delete(){}
+    retrieve(){
+        return this;
+    }//search
+    insert(){
+        return this;
+    }
+    delete(){
+        return this;
+    }
 }
 
 let l = new Circular()
