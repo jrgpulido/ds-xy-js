@@ -3,11 +3,20 @@
  * your solution here
  *
  */
-import Node from '../../../../haas/linked/node6es.js'
+import Node from '../../../../haas/linked/node5es.js'
 
-let n = new Node('b')
-// console.log(n)| // Node { data: 'b', next: null }
-let n1 = 'c'
-n.insertAfter(n1, 'a')
+let list = new Node();list.prepend('b')
+console.log(list)
 
-console.log(n)
+console.log('\n******************************')
+
+list.insertAfter('c','b') // inserta 'c' después de 'b'
+list.traverse()
+
+console.log('\n******************************')
+
+list.insertBefore('c','b') // inserta 'c' antes de 'b'
+list.traverse()
+
+console.log('\n******************************')
+console.log("*-**-**-**-**-**-**-**-**-**-*")

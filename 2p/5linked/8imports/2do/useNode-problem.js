@@ -10,7 +10,7 @@
 //
 
 // 2 insertBefore
-// inserta el nuevoNodo antes del nodo que contiene los datos 'b'
+// inserta newNode antes del nodo que contiene los datos 'b'
 //
 // -> c char
 // -> newNode Nodo
