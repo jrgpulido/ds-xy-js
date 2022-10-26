@@ -13,15 +13,17 @@ function Node(data) { // Constructor de nodos
 }
 
 /////////////////////////////////////////////////////
-
+// Tested - OK
 LinkedList.prototype.getHead = function () { // Devuelve el primer nodo de la lista
     return this.head.data
 }
 
+// Tested - OK
 LinkedList.prototype.getTail = function () { // Devuelve el último nodo de la lista
     return this.tail
 }
 
+// Tested - OK
 LinkedList.prototype.prepend = function (data) { // Añade un nodo al principio de la lista
     if (!this.head) {
         this.head = new Node(data)
@@ -34,6 +36,7 @@ LinkedList.prototype.prepend = function (data) { // Añade un nodo al principio 
     }
 }
 
+// Tested - OK
 LinkedList.prototype.append = function (data) { // Añade un nodo al final de la lista
     if (!this.head) {
         this.head = new Node(data)
@@ -49,6 +52,7 @@ LinkedList.prototype.append = function (data) { // Añade un nodo al final de la
     }
 }
 
+// Tested - OK
 LinkedList.prototype.toString = function () { // Devuelve la lista en formato string
     let referencia = this.head;
     let cadena = ""
@@ -57,6 +61,18 @@ LinkedList.prototype.toString = function () { // Devuelve la lista en formato st
         referencia = referencia.next
     }
     return cadena
+}
+
+// Testing - OK
+LinkedList.prototype.traverse = function () { // Recorre la lista y ejecuta una función callback
+    let referencia = this.head;
+    let i = 0
+    while (referencia) {
+        console.log('['+i+']',referencia.data)
+        referencia = referencia.next
+        i++
+    }
+    console.log('\n')
 }
 
 // exporta la lista enlazada

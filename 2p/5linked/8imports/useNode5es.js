@@ -18,7 +18,7 @@ console.log(list)
 
 console.log("******************************")
 
-list.prepend('Hello World')
+list.prepend([123,'abc'])
 console.log(list)
 
 console.log("******************************")
@@ -26,6 +26,14 @@ console.log("******************************")
 console.log(list.getHead())
 
 console.log("******************************")
-console.log("*-**-**-**-**-**-**-**-**-**-*")
 
 console.log(list.getTail())
+
+console.log("******************************")
+
+console.log(list.toString())
+
+console.log("******************************")
+console.log("*-**-**-**-**-**-**-**-**-**-*")
+
+list.traverse()
