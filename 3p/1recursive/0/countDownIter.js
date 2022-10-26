@@ -5,7 +5,7 @@
 //
 
 function countdown(number) {
-    for(let i = number; i >= 0; i--) {
+    for(let i = number; i >= 1; i--) {
      	console.log(i);
     }
 }
