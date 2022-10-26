@@ -1,93 +1,66 @@
-export default
 //
 // ES5
 //
-function node(n) { // Node
-  //Constructor
-  this.head = n
-  this.tail = n
-  this.size = 1
+function LinkedList() { // Constructor de listas enlazadas
+    this.head = null;
+    this.tail = null;
 
-  //Methods
-  this.getHead = getHead
-  this.getTail = getTail
-  this.prepend = prepend
-  this.append = append
-  this.traverse = traverse
-  this.contains = contains
-  this.insertAfter = insertAfter
-  this.insertBefore = insertBefore
 }
 
-function getHead() { return this.head }
-
-function prepend(n) {//new node to -FRONT-->
-  n.next = this.head
-  this.head = n
-  this.size++
+function Node(data) { // Constructor de nodos
+    this.data = data
+    this.next = null
 }
 
-function append(n) {//new node to <--BACK-
-    this.tail.next = n
-    this.tail = n
-    this.size++
+/////////////////////////////////////////////////////
+
+LinkedList.prototype.getHead = function () { // Devuelve el primer nodo de la lista
+    return this.head.data
 }
 
-function traverse() {
-  let c = this.head
-  while (c) {//exists
-    //console.log(c.key)
-    console.log(c.data)
-    c = c.next
-  }
-  console.log('\n')
-} // Recorre el nodo completo
-
-//
-// exercises
-//
-
-function contains(n) {
-  let c = this.head
-  while (c) {//exists
-    if (c.key === n.key) return true
-    c = c.next
-  }
-  return false
+LinkedList.prototype.getTail = function () { // Devuelve el último nodo de la lista
+    return this.tail
 }
 
-function getTail() { return this.tail }
-
-function insertAfter(n, d) { // new node, data
-    let c = this.head
-    while (c) {//exists
-        if (c.data === d) {
-        n.next = c.next
-        c.next = n
-        this.size++
-        return true
-        }
-        c = c.next
+LinkedList.prototype.prepend = function (data) { // Añade un nodo al principio de la lista
+    if (!this.head) {
+        this.head = new Node(data)
+        this.tail = data
     }
-    return false
-}
-
-function insertBefore(n, d) { // new node, data
-    let c = this.head
-    while (c) {//exists
-        if (c.data === d) {
-            n.next = c
-            this.head = n
-            this.size++
-            return true
-        }
-    c = c.next
+    else {
+        let referencia = this.head;
+        this.head = new Node(data)
+        this.head.next = referencia
     }
-    return false
 }
 
-let n = new node('b')
-n.insertBefore('c', 'b')
-// console.log(n) // Node { data: 'b', next: null }
+LinkedList.prototype.append = function (data) { // Añade un nodo al final de la lista
+    if (!this.head) {
+        this.head = new Node(data)
+        this.tail = data
+    }
+    else {
+        let referencia = this.head;
+        while (referencia.next) {
+            referencia = referencia.next
+        }
+        referencia.next = new Node(data)
+        this.tail = data
+    }
+}
 
-console.log(n)
+LinkedList.prototype.toString = function () { // Devuelve la lista en formato string
+    let referencia = this.head;
+    let cadena = ""
+    while (referencia) {
+        cadena += referencia.data + " "
+        referencia = referencia.next
+    }
+    return cadena
+}
+
+// exporta la lista enlazada
+export default LinkedList
+
+// exporta el nodo
+export { Node }

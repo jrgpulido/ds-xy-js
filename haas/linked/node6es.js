@@ -91,3 +91,13 @@ class Node {
           console.log('\n')
       }
 }
+
+let node = new Node('a')
+node.append('b')
+node.append('c')
+node.append('d')
+node.append('e')
+
+node.traverse()
+
+console.log(node)
