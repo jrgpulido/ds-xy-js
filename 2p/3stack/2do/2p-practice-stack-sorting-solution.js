@@ -3,7 +3,6 @@ function getRandomIntInclusive(min,max){
     max=Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
-
 function RandomStacks(siz,stack){
     let arr=[];
     for(let i=0; i<siz; i++){
@@ -16,7 +15,6 @@ function RandomStacks(siz,stack){
         arr.splice(a,1);
     }  
 }
-
 function Stack() {
     this.dataStore = []
     this.top=0
@@ -26,27 +24,21 @@ function Stack() {
     this.clear=clear
     this.length=length
 }
-
 function push(element) {
     this.dataStore[this.top++]=element
 }
-
 function peek() {
     return this.dataStore[this.top-1]
 }
-
 function pop() {
     return this.dataStore[--this.top]
 }
-
 function clear() {
     this.top = 0
 }
-
 function length() {
     return this.top
 }
-
 function sort(stack){
     let tempStack= new Stack();
     let step=0;
@@ -64,9 +56,7 @@ function sort(stack){
     stack.dataStore = tempStack.dataStore;
     console.log("Tomó "+step+" pasos para completarse")
 }
-
 let Mystack=new Stack()
-
 for(var i=0; i<5; i++){
     Mystack.clear();
     RandomStacks(10, Mystack)
@@ -75,7 +65,6 @@ for(var i=0; i<5; i++){
     console.timeEnd('Tiempo de ejecución')
     console.log(Mystack.dataStore)
 }
-
 for(var i=0; i<5; i++){
     Mystack.clear();
     RandomStacks(100, Mystack)
@@ -84,7 +73,6 @@ for(var i=0; i<5; i++){
     console.timeEnd('Tiempo de ejecución')
     console.log(Mystack.dataStore)
 }
-
 for(var i=0; i<5; i++){
     Mystack.clear();
     RandomStacks(1000, Mystack)

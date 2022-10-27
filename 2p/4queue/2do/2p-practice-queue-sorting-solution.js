@@ -4,45 +4,50 @@ function Queue() {
 	this.dataStore.push(element)
     }
 
+  
     this.dequeue=function() {
 	return this.dataStore.shift()
     }
 
+  
     this.front=function() {
 	return this.dataStore[0]
     }
 
+  
     this.back=function() {
 	return this.dataStore[this.dataStore.length-1]
     }
 
+  
     this.toString=function() {
 	let retStr = ""
 	for (let i=0; i < this.dataStore.length; ++i) {
 	    retStr += this.dataStore[i] + "\n"
 	}
+
+      
 	return retStr
     }
-
     this.empty=function() {
 	if (this.dataStore.length == 0)
 	    return true	
 	else 
 	    return false
     }
-
     this.clear=function(){
         this.dataStore=[]
     }
-
     this.full=function() {}
 }
+
 
 function getRandomIntInclusive(min,max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max-min+1) + min)
   }
+
 
 function RandomQueue(siz,queue){
     let arr=[];
@@ -56,6 +61,7 @@ function RandomQueue(siz,queue){
         arr.splice(a,1);
     }  
 }
+
 
 function sort(queue){
     let temp1 = new Queue();
@@ -89,8 +95,9 @@ function sort(queue){
     queue.dataStore=temp1.dataStore;
     console.log("Tomó "+step+" pasos para completarse")
 }
-let Myqueue=new Queue()
 
+
+let Myqueue=new Queue()
 for(var i=0; i<5; i++){
     Myqueue.clear()
     RandomQueue(10,Myqueue)
@@ -100,6 +107,7 @@ for(var i=0; i<5; i++){
     console.log(Myqueue.dataStore)
 }
 
+
 for(var i=0; i<5; i++){
     Myqueue.clear()
     RandomQueue(100,Myqueue)
@@ -108,6 +116,7 @@ for(var i=0; i<5; i++){
     console.timeEnd('Tiempo de ejecución')
     console.log(Myqueue.dataStore)
 }
+
 
 for(var i=0; i<5; i++){
     Myqueue.clear()
