@@ -1,5 +1,5 @@
 //
-// 5,..,1
+// recursive
 // vs
 // countDownIter.js
 //

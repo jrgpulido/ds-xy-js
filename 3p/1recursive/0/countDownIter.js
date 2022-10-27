@@ -10,4 +10,4 @@ function countdown(number) {
     }
 }
 
-countdown(10)
+countdown(5)
