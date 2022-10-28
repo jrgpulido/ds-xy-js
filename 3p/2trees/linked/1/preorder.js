@@ -3,9 +3,10 @@
 //
 
 function preorder(n){
-  if (n!==null){
+  if (n){//exists
     console.log(n.d)
-    preorder(n.l)
+
     preorder(n.r)
+    preorder(n.l)
   }
 }

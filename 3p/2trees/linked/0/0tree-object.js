@@ -22,5 +22,5 @@ let root={
 
 
 
- root.l=n1
- root.r=n2
+ root.l=n1//left
+ root.r=n2//right
