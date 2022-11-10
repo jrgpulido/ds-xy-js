@@ -2,4 +2,4 @@ export default
 //
 // ES6
 //
-class Twodo {}
+class Graph {}
