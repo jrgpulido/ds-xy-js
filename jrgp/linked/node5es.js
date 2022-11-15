@@ -1,15 +1,8 @@
 export default
 //
-// ES6
+// ES5
 //
-class Node {
-    constructor(d, n = null){
-	this._data=d
-	this._next=n
-    }
-  
-    get data(){
-	return this._data
-    }
-
+function Node(d,n=null) {
+    this.data = d//data
+    this.next=n//link
 }
