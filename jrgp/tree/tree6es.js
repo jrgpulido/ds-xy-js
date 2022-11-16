@@ -3,13 +3,17 @@ export default
 // ES6
 //
 class Tree {
-    constructor(n){}
+  constructor(n){}
 
-    addNode(n){}
-    addEdge(n1,n2){}
+  addNode(n){}
+  removeNode(n){}
+  findNode(n){}
 
-    removeNode(n){}
-    removeEdge(n1,n2){}
+  preorder(){}
+  inorder(){}
+  posorder(){}  
 
-    findNode(n){}
+  max(){}
+  min(){}
+
 }

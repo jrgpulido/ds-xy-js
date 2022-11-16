@@ -1,3 +1,7 @@
+//
+// simplest graph qm
+//
+
 friends = {
     "Alice" : ["Bob", "Diana", "Fred"],
     "Bob" : ["Alice", "Cynthia", "Diana"],

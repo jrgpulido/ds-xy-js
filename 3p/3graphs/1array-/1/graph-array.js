@@ -1,3 +1,3 @@
 //
-// graph as array of array
+// graph as anArray
 //

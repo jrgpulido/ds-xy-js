@@ -1,8 +1,8 @@
 //
-// pending
+// what is it : aTree or aGraph
 //
 
-let tree =  [
+let qm =  [
     [0, 1, 0, 0],//1 
     [1, 0, 1, 1],//2 
     [0, 1, 0, 1],//3 
