@@ -1,4 +1,4 @@
-import M   from '../../recursive/matrix/Matrix'
+import M   from '../matrix/Matrix.js'
 //
 // ok - asMatrix
 //

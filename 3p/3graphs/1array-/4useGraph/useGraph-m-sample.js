@@ -1,5 +1,5 @@
-import GraphSample from '../jrgp/strategies/graph/Graph-m-sample'
-import Graph from '../jrgp/strategies/graph/Graph-m'
+import GraphSample from '../../../../jrgp/graph/Graph-m-sample.js'
+import Graph from '../../../../jrgp/graph/Graph-m.js'
 
 //
 // ok - asMatrix
