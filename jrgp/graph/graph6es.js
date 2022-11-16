@@ -3,13 +3,32 @@ export default
 // ES6
 //
 class Graph {
-    constructor(n){}
+    constructor(g){}//from file, str, mtx
 
-    addNode(n){}
-    addEdge(n1,n2){}
+    addVertex(v){}//node
+    addVertex(v,u,e){}
+    removeVertex(v){}//
+    getVertices(){}
 
-    removeNode(n){}
-    removeEdge(n1,n2){}
+    addEdge(e,f){}//
+    addEdge(e){}
+    removeEdge(e){}//
+    removeEdge(i,j){}
 
-    findNode(n){}
+    findNode(v){}
+
+    getEdges(){}
+    getWeight(e){}
+    getWeight(v,u){}
+
+    order(){}//
+    size(){}//
+
+    //bool
+    hasVertex()
+    hasEdge()
+
+    makeEmpty(){}
+    isFull(){}
+    isEmpty(){}
 }

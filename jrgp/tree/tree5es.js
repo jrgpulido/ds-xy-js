@@ -1,6 +1,7 @@
 export default
 //
 // ES5
+// zeeAlso tree6es.js
 //
 function Tree() {
     this.addNode=addNode
