@@ -1,4 +1,4 @@
 //
 // dcomplab exercises
-// incidence matrix2
+// incidence matrix2 (könisberg)
 // 

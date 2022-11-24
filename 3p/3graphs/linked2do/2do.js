@@ -1,4 +1,4 @@
 //
-// design node of a 
+// design node (object) for a  
 // weighted graph incidence list 
 // 
