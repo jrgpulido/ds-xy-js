@@ -1,12 +1,16 @@
-function coin() {
-  n = Math.random()
-  if (n<0.5)
-    return 'cara'
-  else
-    return 'sol'
+let n = 1
+let reclama = 2
+
+let caraAbajo = 5/6
+let singleOdds = 1/6
+console.log('Numero del dado:', n)
+let posibles = Math.pow(6, n)
+console.log('Posibles salidas:', posibles)
+ 
+for (let i=0; i < n; i++) {
+  if (i == 0) continue
+  singleOdds = singleOdds * singleOdds
 }
-console.log(coin())
-console.log(coin())
-console.log(coin())
-console.log(coin())
-console.log(coin())
+console.log(singleOdds * reclama)
+ 
+console.log(singleOdds)
