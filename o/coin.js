@@ -5,3 +5,8 @@ function coin() {
   else
     return 'sol'
 }
+console.log(coin())
+console.log(coin())
+console.log(coin())
+console.log(coin())
+console.log(coin())
