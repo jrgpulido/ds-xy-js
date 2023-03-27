@@ -1,5 +1,5 @@
 //
-// create library
+// ES5
 //
 
 function Queue() {
