@@ -1,6 +1,7 @@
 export default
 //
 // ES6
+// zeeAlso tree5es.js
 //
 class Tree {
   constructor(n){}
